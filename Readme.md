@@ -6,8 +6,9 @@ https://github.com/rahulsinha036/Generate-Certificate-using-Python3
 
 Script modified by Samuel R Osuna https://srosuna.github.io
 Twitter @srosuna1
-If you consider a donation, please send paypal to https://paypal.me/srojas1974[https://paypal.me/srojas1974](https://www.paypal.com/paypalme/srojas1974) 
-or to this BTC address 19Tf35zTRuJ9kijWWv2ZTUSq7zkmgAGEVf
+If you consider a donation, please send paypal to https://paypal.me/srojas1974
+
+Or to this BTC address 19Tf35zTRuJ9kijWWv2ZTUSq7zkmgAGEVf
 This motivates us to continue developing
 
 **Warning:**
@@ -16,16 +17,21 @@ The modification and development of this script was tested on an operating syste
 **Requirements.**
 You must have the following python packages installed
 "Panda" and "Pillow"
-run in a terminal
+run in a terminal.
+
 *$ pip install panda*
+
 *$pip install pillow*
 
 To deal with Open Document Format documents or LibreOffice Ods extensions, you must install the "odfpy" package
 *$ pip install odfpy*
 
-Instructions:
+**Instructions:**
+
 Download or clone the repository to your hard drive.
-execute in terminal 
+
+I suggest you run the following command in a terminal to give permissions to all files.
+
 $ sudo chmod -R +x attendance-certificates-python3/
 
 The files are in the same folder, a jpg/ or pdf/ folder should be created according to your preference.
@@ -47,7 +53,9 @@ If you want it in pdf files, create a folder called pdf/
 If you want a jpg image, create a folder called jpg/
 
 **For Running Script**
+
 ****JPG Format:****
+
 1) If you want to generate the certificates from an XLXS source for JPG, run:
 
 *$python3 certificate-generator-xlsx-jpg.py*
@@ -59,6 +67,7 @@ If you want a jpg image, create a folder called jpg/
 The generated files will be saved in the jpg/ folder.
 
 ****PDF Format****
+
 3) If you want to generate the certificates from an ODS source for PDF, run:
 
 *$python3 certificate-generator-ods-pdf.py*
