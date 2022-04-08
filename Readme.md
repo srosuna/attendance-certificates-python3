@@ -48,6 +48,7 @@ The generated files depending on your preference, if they are in pdf, they will 
 If you choose jpg image, they will be generated in the /jpg/ folder.
 
 You must create a folder in the root of the project according to your preferences.
+
 If you want it in pdf files, create a folder called pdf/
 
 If you want a jpg image, create a folder called jpg/
