@@ -1,0 +1,15 @@
+#Debe tener instalados "Pandas" y "Pillow", hágalo con la ultima versión de PIP
+#Una vez instaladas, exporte dichas librerías de la siguiente forma#Enter the color code in (R,G,B) formatimport pandas as pdfrom PIL import Image, ImageDraw, ImageFont
+
+data = pd.read_excel (r'gen.ods', engine="odf")
+#debe antes instalar con pip el paquete odfpy
+name_list = data["Nombres"].tolist()
+for i in name_list:
+    im = Image.open(r'flisol2022-2.jpg')
+    d = ImageDraw.Draw(im)
+    location = (100, 250)
+    text_color = (0, 137, 209)
+    font = ImageFont.truetype("arial.ttf", 30)
+    d.text(location, i, fill = text_color, font = font)
+    im.save("./jpg/certificate_" + i + ".jpg")
+

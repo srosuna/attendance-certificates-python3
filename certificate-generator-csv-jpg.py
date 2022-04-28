@@ -2,15 +2,14 @@
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 
-#Name of the ods file, if you have it in another location on your hard drive,
-#specify the path, for example: '/home/user/Documents/my_file.ods' (don't forget the ')
-#you must first install the odfpy package with pip
-data = pd.read_excel (r'gen-4.ods', engine="odf")
+#Name of the excel file, if you have it in another location on your hard drive,
+#specify the path, for example: '/home/user/Documents/my_file.xlsx' (don't forget the ')
+#data = pd.read_csv (r'gen-3.csv', sep=",")
 #Creation of the list
+data = pd.read_csv("gen-4.csv", sep=",")["Nombres"].to_list()
 name_list = data["Nombres"].tolist()
 for i in name_list:
-    im = Image.open(r'certificate-empty.jpg') #place here the jpg image of the empty image file or certificate model.
-
+    im = Image.open(r'certificate-empty.jpg') #As well as the name of the excel file, place here the jpg image of the empty image file or certificate model
     d = ImageDraw.Draw(im)
     location = (100, 250) #X & Y coordinates where the list data will be printed
     text_color = (0, 137, 209) #Enter the color code in (R,G,B) format
